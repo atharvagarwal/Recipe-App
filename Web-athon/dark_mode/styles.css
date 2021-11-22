@@ -1,0 +1,14 @@
+h1{
+    color: tomato;
+}
+
+body.dark{
+    background-color: slategrey;
+}
+
+.dark_mode{
+    color:bisque;
+}
+
+
+

@@ -1,0 +1,84 @@
+body{margin: 0px;
+}
+/*navbar design*/
+
+.brand-logo{font-size: 1.25rem;}
+.brand-logo:hover{color:#161E54;}
+
+.navbar{display: flex;
+    justify-content: space-around;
+   
+    background-color: #FF5151;
+    color: aliceblue;
+    margin: 0px;
+    
+    font-family: 'M PLUS Code Latin', sans-serif;
+
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-list-items{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+}
+
+
+a {
+    text-decoration:none;
+    color:#FFF;
+  }
+
+  .navbar-list-items:hover{
+      color: cadetblue;
+  }
+
+  .toggle-bar{
+      position: absolute;
+      
+      top:1rem;
+      right: 0.75rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 30px;
+      width: 30px;
+  }
+
+  .toggle-bar .bar{
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius:10px;
+
+  }
+
+@media (max-width:700px) {
+    .toggle-bar{display: flex;}
+    .brand-logo{align-self: flex-start;
+    margin-left:10px;}
+    .navbar{display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;}
+    .brand-logo{justify-content: left;}
+    .navbar-links{display:none;}
+
+    .navbar-links.active{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.brand-section-1{
+    margin-top: 0px;
+    height: 500px;
+    width: 100vw;
+    background-color: #161E54;
+}
